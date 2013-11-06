@@ -204,7 +204,7 @@
       <div id="content">
         <div id="header">
           <h1>Kanban Exercise</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
+          <h2>Controllers and Views in Ruby on Rails</h2>
         </div>
 
         <div id="about">
@@ -218,23 +218,18 @@
 
           <ol>
             <li>
-              <h2>Study the Models</h2>
-              <p>This Application already has two models: boards and cards.
-              Create the database and load the seed data by running
-              <code>rake db:setup</code></p>
-            </li>
-
-            <li>
-              <h2>Test the Input Forms</h2>
-              <p>You saw in step one that there are some validations in the models.
-              Try filling out the new forms to find out what happens when your
+              <h2>Study the Application</h2>
+              <p>Create the database and load the seed data by running
+              <code>rake&nbsp;db:setup</code></p>
+              <p>Learn about the models, their properties, their associations</p>
+              <p>Try filling out the forms (for both models) to find out what happens when your
               input does not conform to the validations</p>
             </li>
 
             <li>
-              <h2>dependent models</h2>
-              <p>Cards depend on their board and should be deleted when the board
-              is deleted.  Make it so!</p>
+              <h2>Navigation on every page</h2>
+              <p>There should be a navigation menu at the top of every page
+              that leads to the homepage and to this "todo" page</p>
             </li>
 
             <li>
@@ -244,12 +239,10 @@
               <pre>resources :boards do
   resources :cards
 end</pre>
-                <p>Study the URLs again.</p>
-            </li>
-            <li>
-              <h2>Changes in <code>cards_controller</code></h2>
-              <p> Change the card_controller to
-              always read params[:board_id]. The index-action should
+              <p>Study the URLs again.</p>
+              <p>Change the <code>card_controller</code> and some views to make the nested urls work:</p>
+              <p>
+              cards_controller lways reads params[:board_id]. Its index-action should
               only show cards of this board.  When creating or updating a card
               there should be no input-field for board_id in the form,
               the board_id is already specified by the url. 
@@ -263,13 +256,6 @@ end</pre>
             </p>
             </li>
 
-            <li>
-            <h2>Replace this Homepage</h2>
-            <p>Show a list of all boards on the homepage.
-            You need to delete the file <code>public/index.html</code>
-            and define a root route.
-            </p>
-            </li>
           </ol>
         </div>
       </div>
