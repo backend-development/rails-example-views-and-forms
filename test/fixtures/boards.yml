@@ -1,7 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  title: MyString
+  id: 1
+  title: The First Board
 
 two:
-  title: MyString
+  id: 2
+  title: The Second Board

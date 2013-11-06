@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: a first card
+  status: done
+  board_id: 1
+
+two:
+  description: a second card
+  status: backlog
+  board_id: 2

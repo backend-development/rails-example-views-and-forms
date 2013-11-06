@@ -225,17 +225,16 @@
             </li>
 
             <li>
-              <h2>before_filter in cards_controller</h2>
-              <p>Three actions in the cards_controller find a Card
-              from the parameter.  Define a before_filter for doing this.</p>
+              <h2>Test the Input Forms</h2>
+              <p>You saw in step one that there are some validations in the models.
+              Try filling out the new forms to find out what happens when your
+              input does not conform to the validations</p>
             </li>
 
             <li>
               <h2>dependent models</h2>
-              <p>Cards depend on their board and are deleted when the board
-              is deleted.  Delete a board and study the log file: how are the
-              cards deleted? Does Rails use referential integrity in the
-              database?</p>
+              <p>Cards depend on their board and should be deleted when the board
+              is deleted.  Make it so!</p>
             </li>
 
             <li>
@@ -245,7 +244,7 @@
               <pre>resources :boards do
   resources :cards
 end</pre>
-
+                <p>Study the URLs again.</p>
             </li>
             <li>
               <h2>Changes in <code>cards_controller</code></h2>
